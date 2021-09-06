@@ -10,7 +10,23 @@ const userPost = (req, res) =>{
 	})
 }
 
+const userPut = (req, res) =>{
+	res.json({
+		msg: "method put"
+	})
+}
+
+
+const userDelete = (req, res) =>{
+	res.json({
+		msg: "method delete"
+	})
+}
+
+
 module.exports = {
 	userGet,
 	userPost,
+	userPut,
+	userDelete,
 }
