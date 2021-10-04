@@ -10,7 +10,7 @@ class Server{
 		this.usuariosPath = '/api/usuarios'
 
 		// conexion db
-		this.conectarDB();
+		// this.conectarDB();
 		// middlewares
 		this.middleware()
 		// rutas
@@ -28,7 +28,7 @@ class Server{
     }
 
 	routes(){
-		this.app.use(this.usuariosPath, require("../router/user"))
+		this.app.use(this.usuariosPath, require("../routes/user"))
 	}
 
 	listen(){

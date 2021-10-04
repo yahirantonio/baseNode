@@ -1,4 +1,4 @@
-const User = require('../models/usuario');
+const User = require('../models/User');
 
 const userGet = (req, res) =>{
 	res.json({
